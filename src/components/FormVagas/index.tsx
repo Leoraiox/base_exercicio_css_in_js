@@ -1,12 +1,16 @@
 import { FormEvent, useState } from 'react'
 import { BtnPesquisar, Campo, Form } from './FormVagas.module'
 
-const FormVagas = () => {
-  const [termo, setTermo] = useState('')
+type Props = {
+  aoPesquisar: (termo: string) => void
+}
+
+const FormVagas = ({ aoPesquisar }: Props) => {
+  const [termo, setTermo] = useState<string>('')
 
   const aoEnviarForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log('Pesquisar por:', termo)
+    aoPesquisar(termo.toLocaleLowerCase())
   }
 
   return (
