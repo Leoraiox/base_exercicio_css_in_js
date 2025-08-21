@@ -1,13 +1,11 @@
-import { Form, Container, HeroTitle } from './Hero.module'
+import { Container, FormHero } from './Hero.module'
 
 const Hero = () => (
-  <Form>
+  <FormHero>
     <Container>
-      <HeroTitle>
-        As melhores vagas para tecnologia, design e artes visuais.
-      </HeroTitle>
+      <h2>As melhores vagas para tecnologia, design e artes visuais</h2>
     </Container>
-  </Form>
+  </FormHero>
 )
 
 export default Hero
