@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media (max-width: 1024px) {
-    .container {
+  .container {
       max-width: 80%;
     }
   }

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const FormHero = styled.form`
+
   height: 360px;
   width: 100%;
   background-image: url('https://cdn.pixabay.com/photo/2018/08/10/15/45/woman-3597101_1280.jpg');
@@ -19,6 +20,7 @@ export const FormHero = styled.form`
     content: '';
     opacity: 0.7;
   }
+}
 
   @media (max-width: 768px) {
     & {

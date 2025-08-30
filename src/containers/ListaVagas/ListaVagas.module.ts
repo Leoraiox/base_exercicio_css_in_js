@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ListagemVagas = styled.ul`
+export const ListagemVagas = styled.li`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
@@ -8,8 +8,6 @@ export const ListagemVagas = styled.ul`
   margin-top: 32px;
 
   @media (max-width: 768px) {
-    & {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
   }
 `

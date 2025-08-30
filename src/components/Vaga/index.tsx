@@ -11,10 +11,10 @@ type Props = {
 const Vaga = (props: Props) => (
   <VagaItem>
     <h2>{props.titulo}</h2>
-    <p>{props.local}</p>
-    <p>{props.salario}</p>
-    <p>{props.descricao}</p>
     <ul>
+      <li>{props.local}</li>
+      <li>{props.salario}</li>
+      <li>{props.descricao}</li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
     <VagaLink href="#">Ver detalhes e candidatar-se</VagaLink>
